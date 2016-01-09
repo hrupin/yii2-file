@@ -27,5 +27,22 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-```php
-<?= \hrupin\file\AutoloadExample::widget(); ?>```
+```
+use hrupin\file\File;
+
+$dir = '/some/your/dir';
+
+$file = new File($dir, 'file.txt');
+$file->readAllFile();
+$file->readStrFile(10);
+$file->closeFile();
+
+$file->createFile($dir, 'anotherFile.txt');
+$file->writeFile('You some text or data ...');
+$file->writeFile('Add you some text or data ...');
+$file->readAllFile();
+$file->closeFile();
+
+var_dump($file->getErrors());
+
+```
