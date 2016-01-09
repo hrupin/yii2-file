@@ -1,0 +1,21 @@
+{
+    "name": "hrupin/yii2-file",
+    "description": "File",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hrupin",
+            "email": "79636905945@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "hrupin\\file\\": ""
+        }
+    }
+}
